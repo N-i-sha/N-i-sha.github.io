@@ -77,15 +77,11 @@ This fetches ALL your public repos in real-time. So:
 ### Update your email & LinkedIn
 Open `index.html` and find:
 ```html
-<a href="mailto:your@email.com" ...>
-<a href="https://www.linkedin.com/in/YOUR-LINKEDIN" ...>
+<a href="mailto:nishasoni87700@email.com" ...>
+<a href="https://www.linkedin.com/in/nisha-soni-4a9bbb321/" ...>
 ```
-Replace with your real email and LinkedIn URL.
 
-### Add a project description on GitHub
-In each GitHub repo, click **Edit** (pencil icon) next to About:
-- Add a **Description** → shows as project card text
-- Add a **Website URL** → shows as live demo button 🔗
+
 
 ### Show a repo as featured
 Add the topic `featured` to any GitHub repo. The card will appear first.
