@@ -1,104 +1,145 @@
 # 🚀 Nisha Soni — Auto-Sync Portfolio
 
-A production-ready personal portfolio that **automatically syncs all your GitHub repositories** — no manual updates ever needed.
+# 🌿 Nisha Soni — Personal Portfolio
 
-![Portfolio Preview](preview.png)
+> Data Analyst & AI Developer Portfolio — auto-synced with GitHub API
 
----
-
-## ✨ Features
-
-- 🔄 **Auto GitHub Sync** — All public repos load live via GitHub API
-- 🎨 **Bold & Colorful UI** — Dark theme with animated blobs & gradient accents
-- 🔍 **Filter by Language** — Python, JS, HTML, Jupyter Notebook
-- ⭐ **Stats Panel** — Shows repo count & languages used
-- 📱 **Fully Responsive** — Works on mobile & desktop
-- 🔗 **Live Demo Links** — Reads `homepage` field from each repo automatically
-- ⚡ **Zero Backend** — Pure HTML/CSS/JS, no server needed
+**Live at:** [https://N-i-sha.github.io](https://N-i-sha.github.io)
 
 ---
 
-## 📁 Project Structure
+## ✨ About This Portfolio
+
+A premium personal portfolio website built for **Data Analyst & AI Developer** roles. Features a dark luxury theme with floating gradient animations, profile photo, industry certificates, and **live GitHub project sync** — no manual updates ever needed.
+
+---
+
+## 🚀 Key Features
+
+- **🔄 Auto GitHub Sync** — All public repos load live via GitHub REST API on every visit
+- **🖼️ Profile Photo** — Embedded directly in the page, no external hosting needed
+- **🏆 Certificates Section** — OneRoadmap, Deloitte, TATA (2) certificates displayed
+- **🌊 Floating Gradient Blobs** — Animated background for premium feel
+- **🔍 Language Filter** — Filter projects by Python / JavaScript / HTML / Jupyter
+- **📊 Live Stats** — Repo count updates automatically from GitHub
+- **📱 Fully Responsive** — Works perfectly on mobile and desktop
+- **⚡ Zero Backend** — Pure HTML + CSS + JS, no server needed
+- **🎨 Dark Luxury Theme** — Gold + rose + purple gradients, Cormorant Garamond font
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure and layout |
+| CSS3 | Dark theme, animations, glassmorphism cards |
+| Vanilla JavaScript | GitHub API calls, dynamic rendering, filters |
+| GitHub REST API | Live repo data source |
+| GitHub Pages | Free hosting |
+| Cormorant Garamond | Elegant serif typography |
+| DM Sans | Clean sans-serif body font |
+
+---
+
+## 📁 File Structure
 
 ```
-portfolio/
-├── index.html      → Main portfolio page
-├── style.css       → All styles (dark theme, animations)
-├── app.js          → GitHub API fetching + filter logic
-└── README.md       → This file
+N-i-sha.github.io/
+└── index.html        ← Everything in one file (HTML + CSS + JS)
+└── README.md         ← This file
 ```
+
+> **Note:** No separate CSS or JS files needed — everything is inside `index.html`
 
 ---
 
-## 🚀 Deploy to GitHub Pages (5 minutes)
+## 🚀 How to Deploy (GitHub Pages)
 
-### Step 1 — Create the repo
-1. Go to [github.com/new](https://github.com/new)
-2. Name it exactly: `N-i-sha.github.io`
-   *(replace N-i-sha with your exact GitHub username)*
-3. Set to **Public**
-4. Click **Create repository**
+**Step 1** — Create repo named exactly:
+```
+N-i-sha.github.io
+```
 
-### Step 2 — Upload files
-Upload these 3 files to the repo:
+**Step 2** — Upload these 2 files:
 - `index.html`
-- `style.css`
-- `app.js`
+- `README.md`
 
-### Step 3 — Enable GitHub Pages
-1. Go to repo **Settings → Pages**
-2. Source: **Deploy from a branch**
-3. Branch: `main` → folder: `/ (root)`
-4. Click **Save**
+**Step 3** — Go to repo **Settings → Pages**
+- Source: `Deploy from a branch`
+- Branch: `main` → `/ (root)`
+- Click **Save**
 
-### Step 4 — Done! 🎉
-Your portfolio is live at:
+**Step 4** — Wait 2-3 minutes, then visit:
 ```
 https://N-i-sha.github.io
 ```
 
 ---
 
-## 🎯 How Auto-Sync Works
+## 🔄 How Auto-Sync Works
 
-Every time someone visits your portfolio, it calls the GitHub API:
+Every time someone visits the portfolio:
+
 ```
+Visitor opens site
+       ↓
+JavaScript calls GitHub API
 https://api.github.com/users/N-i-sha/repos
-```
-This fetches ALL your public repos in real-time. So:
-- Push a new project to GitHub → it appears on portfolio automatically
-- Update a repo description → portfolio shows new description
-- Add a `homepage` URL to a repo → portfolio shows a live demo button
-
----
-
-## ✏️ Customization
-
-### Update your email & LinkedIn
-Open `index.html` and find:
-```html
-<a href="mailto:nishasoni87700@email.com" ...>
-<a href="https://www.linkedin.com/in/nisha-soni-4a9bbb321/" ...>
+       ↓
+GitHub returns all repo data as JSON
+       ↓
+Cards auto-render on screen instantly
 ```
 
-
-
-### Show a repo as featured
-Add the topic `featured` to any GitHub repo. The card will appear first.
+**Push a new project to GitHub → it appears on portfolio automatically!**
+No manual updates. Ever. ✅
 
 ---
 
-## 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript
-- **Data:** GitHub REST API v3
-- **Hosting:** GitHub Pages (free)
-- **Fonts:** Syne + DM Sans (Google Fonts)
+## ✏️ How to Customize
+
+### Add project descriptions on GitHub
+Go to each GitHub repo → click **Edit** next to About:
+- Add a **Description** → shows on project card
+- Add a **Website URL** → shows as 🔗 live demo button
+
+### Add more certificates
+Find `<!-- CERTIFICATES -->` section in `index.html` and copy-paste a `cert-card` div.
 
 ---
 
-## 📄 License
-MIT — Free to use and customize.
+## 📊 Sections
+
+| Section | Content |
+|---|---|
+| **Hero** | Name, role, photo, stats, status card |
+| **Skills** | Data, AI/ML, Backend, Frontend, Tools |
+| **Certificates** | OneRoadmap, Deloitte, TATA ×2 |
+| **Projects** | Live from GitHub API, filterable by language |
+| **Contact** | Email, LinkedIn, GitHub |
 
 ---
 
-*Made with 💜 by Nisha Soni*
+## 🏆 Certificates
+
+- **OneRoadmap** — Data Analyst Certification (March 2026)
+- **Deloitte** — Data Analytics Job Simulation via Forage (March 2026)
+- **TATA** — Data Visualisation: Empowering Business via Forage (April 2026)
+- **TATA** — GenAI Powered Data Analytics Simulation via Forage (April 2026)
+
+---
+
+## 👩‍💻 About Me
+
+**Nisha Soni** — Data Analyst & AI Developer
+
+- 🎓 MCA — AKS University, Satna MP
+- 🏢 Intern — MPOnline Limited (TCS JV)
+- 🐍 Python | SQL | Power BI | LangChain | FastAPI | React.js
+- 📍 Satna, Madhya Pradesh
+- ✅ Open to Data Analyst & Python Developer roles
+
+---
+
+*Built with 💛 by Nisha Soni · Powered by GitHub API*
